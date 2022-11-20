@@ -6,6 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/soup.css">
+    <style>
+        .panier
+        {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align:center;
+            display: none;
+        }
+        .panier img
+        {
+            margin: 5px;
+            cursor: pointer;
+        }
+        .contenu-de-cart
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .total
+        {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-right: 10px;
+        }
+    </style>
     <title>Document</title>
 </head>
 
@@ -19,36 +49,50 @@
             <li><a href="../Html/menu.html">Menu</a></li>
             <li><a href="#">About</a></li>
             <li><a href="../Html/Contact.html">Contact Us</a></li>
-            <li><a href="../Html/cart.html"><img src="../images/icon/cart.jpg" width="20px"></a></li>
+            <li><img  onclick="aff()" src="../images/icon/cart.jpg" width="20px"></li>
         </ul>
+    </div>
+    <!-- panier -->
+    <div class="panier">
+        <img onclick="hide()" src="../images/x.svg" alt="x" width="20px" height="20px">
+        <h2>panier</h2>
+        <div class="box">
+            
+        </div>
+        <div class="total">
+            <p>total</p>
+            <p class="totalPrice">0$</p>
+            <button onclick="delet()">buy</button>
+        </div>
     </div>
 
         <div class="menu">
-            <a href="../Html/menu.html">main</a>
-            <a href="../Html/soup.html">Soups</a>
-            <a href="../Html/dessert.html">Dessert</a>
+            <a onclick="all1()">all</a>
+            <a onclick="main()">main</a>
+            <a onclick="soupe()">Soups</a>
+            <a onclick="desert()">Dessert</a>
         </div>
      
     </div>
 
     <div class="parent">
-        <div class="content">
+        <div class="content main">
             <div class="image">
                 <img src="../images/pexels-photo-3297801.webp" alt="chiken asian food soup noodles">
             </div>
             <div class="detail">
-                <h2>Thai salad 25 $</h2>
+                <h2>Thai salad 25$</h2>
                 <div class="ingrediants">
                     <span> -chicken </span>
                     <span> -curry sauce </span>
                     <span> -fried chillie </span>
                     <span> -paniata </span>
                 </div>
-                <button>Add to Cart</button>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
         </div>
 
-        <div class="content">
+        <div class="content main">
             <div class="detail">
                 <h2>Home sushi 25 $</h2>
                 <div class="ingrediants">
@@ -57,13 +101,13 @@
                     <span> -fried chillie </span>
                     <span> -paniata </span>
                 </div>
-                <button>Add to Cart</button>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
             <div class="image">
                 <img src="../images/sushi.jpg" alt="chiken asian food soup noodles">
             </div>
         </div>
-        <div class="content">
+        <div class="content main">
             <div class="image">
                 <img src="../images/pexels-photo-3620705.jpeg" alt="chiken asian food soup noodles">
             </div>
@@ -75,10 +119,104 @@
                     <span> -fried chillie </span>
                     <span> -paniata </span>
                 </div>
-                <button>Add to Cart</button>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
         </div>
-    </div>
+        <div class="content desert">
+            <div class="image">
+                <img src="../images/ebd779e2f3848275f0e942db4175e628.jpg" alt="chiken asian food soup noodles">
+            </div>
+            <div class="detail">
+                <h2>Matcha-gauffre 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="content desert">
+            <div class="detail">
+                <h2>CPumpkin pie 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image">
+                <img src="../images/pexels-photo-5741313.jpeg" alt="chiken asian food soup noodles">
+            </div>
+        </div>
+        <div class="content desert">
+            <div class="image">
+                <img src="../images/f388f27344b504f9aac7326cec84f7aa.jpg" alt="chiken asian food soup noodles">
+            </div>
+            <div class="detail">
+                <h2>Spicy cupcake 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    
+            <div class="content soup">
+                <div class="image">
+                    <img src="../images/pexels-photo-955137.webp" alt="chiken asian food soup noodles">
+                </div>
+                <div class="detail">
+                    <h2>shrimp noodles 25 $</h2>
+                    <div class="ingrediants">
+                        <span> -chicken </span>
+                        <span> -curry sauce </span>
+                        <span> -fried chillie </span>
+                        <span> -paniata </span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="content soup">
+                <div class="detail">
+                    <h2>thai soup 25 $</h2>
+                    <div class="ingrediants">
+                        <span> -chicken </span>
+                        <span> -curry sauce </span>
+                        <span> -fried chillie </span>
+                        <span> -paniata </span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="image">
+                    <img src="../images/pexels-photo-1374493.webp" alt="chiken asian food soup noodles">
+                </div>
+            </div>
+            <div class="content soup">
+                <div class="image">
+                    <img src="../images/pexels-photo-1275894.webp" alt="chiken asian food soup noodles">
+                </div>
+                <div class="detail">
+                    <h2>noodle soup 25 $</h2>
+                    <div class="ingrediants">
+                        <span> -chicken </span>
+                        <span> -curry sauce </span>
+                        <span> -fried chillie </span>
+                        <span> -paniata </span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+   
+</div>         
 
     <footer>
         <div class="footer">
@@ -121,6 +259,149 @@
 
 
     </div>
+    <script>
+        //var panier = document.getElementById("panier");
+            var panier = document.querySelector(".panier")
+            console.log("toubana");
+            var ajout = document.getElementsByClassName("add-to-cart")
+            for(let i=0;i<ajout.length;i++)
+            {
+                ajout[i].addEventListener("click", ajouterAuPanier);
+            }
+            function aff() {
+                console.log("toubana1");
+                panier.style.display = "flex";
+                console.log("toubana2")
+            }
+
+            function hide()
+            {
+                panier.style.display = "none";
+            }
+
+            function ajouterAuPanier(event)
+            {
+                var button = event.target;
+                var titre = button.parentElement.childNodes[1].innerHTML;
+                prix = divide(titre);
+                console.log(titre)
+                console.log(prix)
+                titre = titre.replace(/\d/g,'');
+                titre = titre.replace('$', '');
+                console.log(titre)
+                ajoutP(titre,prix)
+            }
+
+            function ajoutP(titre,prix)
+            {
+                
+                var cratShopBox = document.createElement("div");
+                cratShopBox.classList.add("cart-box");
+                var cartItems = document.getElementsByClassName("box")[0];
+                var cartItemsName = document.getElementsByClassName("title");
+                var cartItemsQuant = document.getElementsByClassName("quant");
+                var cartItemsPrix = document.getElementsByClassName("price");
+                
+                
+                for(let i=0;i< cartItemsName.length;i++)
+                {
+                    if (cartItemsName[i].innerHTML == titre)
+                    {
+                        quantite = divide(cartItemsQuant[i].innerHTML);
+                        quantite++;
+                        var r = `<p class="quant">x${quantite}</p>`
+                        console.log(quantite)
+                        console.log(cartItemsQuant[i].innerHTML)
+                        cartItemsQuant[i].innerHTML = cartItemsQuant[i].innerHTML.replace(/[0-9]/g, quantite)
+                        console.log(cartItemsQuant[i].innerHTML)
+                        updateTotal()
+                        return;
+                    }
+                }
+                
+                
+                var c = `<div class="contenu-de-cart">
+                            <p class="title">${titre}</p>
+                            <p class="quant">x1</p>
+                            <p class="price">${prix}$</p>
+                    
+                        </div>` 
+                cratShopBox.innerHTML = c;
+                cartItems.append(cratShopBox);
+                updateTotal()
+            }
+
+            function divide(str)
+            {
+                var reg = /\d+/g;
+                var result = str.match(reg);
+                return parseFloat(result[0]);
+            }
+            function updateTotal()
+            {
+                var total = 0;
+                var totalPrice = document.querySelector(".totalPrice");
+                var cart_B = document.getElementsByClassName("contenu-de-cart")
+                for(let i=0;i<cart_B.length;i++)
+                {
+                    var priceElement = cart_B[i].getElementsByClassName("price")[0].textContent;
+                    var quantElement = cart_B[i].getElementsByClassName("quant")[0].textContent;
+                    var price = divide(priceElement);
+                    var quan = divide(quantElement);
+                    total += price*quan;
+                    totalPrice.innerHTML = total + '$'
+                }
+            }
+            function delet()
+            {
+                var rm = document.querySelector(".box")
+                rm.innerHTML = "";
+                document.querySelector(".totalPrice").innerHTML = "0$";
+                alert("thank you for your purchase")
+            }
+            function all1()
+            {
+                var a = document.getElementsByClassName("content")
+                for(let i=0;i<a.length;i++)
+                {
+                    a[i].style.display = "flex";
+                    
+                }
+            }
+            function main() 
+            {
+                var a = document.getElementsByClassName("content")
+                var b = document.getElementsByClassName("main")
+                for (let i = 0; i < a.length; i++) {
+                    a[i].style.display = "none";
+                }
+                for (let i = 0; i < b.length; i++) {
+                    b[i].style.display = "flex";
+                }
+            }
+            function soupe() 
+            {
+                var a = document.getElementsByClassName("content")
+                var b = document.getElementsByClassName("soup")
+                for (let i = 0; i < a.length; i++) {
+                    a[i].style.display = "none";
+                }
+                for (let i = 0; i < b.length; i++) {
+                    b[i].style.display = "flex";
+                }
+            }
+            function desert() {
+                    var a = document.getElementsByClassName("content")
+                    var b = document.getElementsByClassName("desert")
+                    for (let i = 0; i < a.length; i++) {
+                        a[i].style.display = "none";
+                    }
+                    for (let i = 0; i < b.length; i++) {
+                        b[i].style.display = "flex";
+                    }
+                }
+    </script>
+    <!-- <link rel="stylesheet" href="../js/script.js"> -->
 </body>
 
 </html>

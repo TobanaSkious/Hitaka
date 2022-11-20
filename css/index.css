@@ -9,7 +9,7 @@
     padding: 8px 50px 0px 50px;
     display:  flex;
     justify-content: space-between;
-
+    text-decoration: none;
   }
   
   .logo img{
@@ -81,7 +81,7 @@
 
   .side button {
     padding: 1rem;
-    background-color: antiquewhite;
+    background-color:#C8AA5C;
     border: none;
     border-radius: 0.3rem;
     font-weight: bold;
