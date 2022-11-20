@@ -38,7 +38,8 @@ ul li a:hover{
   justify-content: space-around;
 }
 
-.menu span {
+.menu a {
+  text-decoration: none;
   text-align: center;
   width: 8%;
   padding: 0.5rem;
@@ -57,7 +58,7 @@ ul li a:hover{
   justify-content: space-around  ;
 }
 
-.image{
+.parent .image{
   width: 40%;
   height: 15rem;
   border-radius: 0.3rem;
@@ -112,9 +113,6 @@ ul li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.right-section{
-  
 }
 
 

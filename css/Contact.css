@@ -44,7 +44,7 @@
     width: 30%;
     height: 25rem;
     object-fit:fill;
-    background-color: aquamarine;
+    
   }
 
   .info {
@@ -64,9 +64,9 @@
   }
 
   .info .input textarea {
-    padding: 0.3rem;
+    /* padding: 0.3rem;
     max-width: 15rem;
-    max-height: 5rem;
+    max-height: 5rem; */
   }
 
   .footer{

@@ -31,21 +31,33 @@
     background: rgb(102, 96, 96);
     transition: .5s; 
   }
-  .cart{
+  /* .cart{
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
-    margin: 10% 0 10% 0;
+    margin: 10% 0 10% 0; */
+/* } */
+.cart1 {
+  margin: 50px 500px;
 }
-.para{
-    display: flex;
-    justify-content: center;
-}
-.para {
-    display: flex;
-    justify-content: column;
-    align-items: center;
 
+
+
+/* .para { */
+  
+     margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    
+
+/* } */
+.para{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 button{
     padding: 1rem;
