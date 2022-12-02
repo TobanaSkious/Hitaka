@@ -39,13 +39,18 @@
     background: rgb(102, 96, 96);
     transition: .5s; 
   }
-
+  .h1{
+    display: flex;
+    justify-content: left;
+    margin-left: 10%;
+  }
   .contact {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     margin: 4rem 0;
     justify-content: space-evenly;
+    margin-bottom: -50px;
   }
   .contact img {
     border-radius: 0.3rem;
@@ -65,18 +70,20 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+   
   }
 
   .info .input input{
-    width: 15rem;
-    padding: 0.4rem;
+    width: 30rem;
+    padding: 0.6rem;
+     text-align: left;
   }
 
-  .info .input textarea {
+  /* .info .input textarea {
     padding: 0.3rem;
    width : 244px ;
    height : 112px;
-  }
+  } */
   .info .button{
     /* display: flex;
     justify-content: center;
@@ -89,6 +96,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    width: 30%;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;

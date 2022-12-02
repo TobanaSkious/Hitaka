@@ -21,11 +21,6 @@
     gap: 5rem;
     list-style-type: none;
 
-    /* margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px; */
 
   }
   
@@ -39,61 +34,69 @@
     background: rgb(102, 96, 96);
     transition: .5s; 
   }
-
-  .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 0;
-    justify-content: space-evenly;
+  .every{
+   display: flex;
+   gap: 30px;
+    flex-direction: column;
   }
-  .contact img {
-    border-radius: 0.3rem;
-    width: 30%;
-    height: 25rem;
-    object-fit:fill;
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .restaurant img {
+    max-height: 300px;
+    width: 60%;
+    /* margin-bottom: 5rem; */
+    margin-left: 4rem;
+    border-radius: 2.5%;
+    
     
   }
-
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 6rem;
-  }
-  .info .input {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .info .input input{
-    width: 15rem;
-    padding: 0.4rem;
-  }
-
-  .info .input textarea {
-    padding: 0.3rem;
-   width : 244px ;
-   height : 112px;
-  }
-  .info .button{
-    /* display: flex;
-    justify-content: center;
-    margin bottom: 7rem;
-    .left-section : 50%: */
-    background-color:#C8AA5C ;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    text-align: center;
-    text-decoration: none;
+  .restaurant button {
+    height: 50px;
+    background-color:white ;
+    /* border: #C8AA5C; */
+    color: #C8AA5C;
+    /* padding: 12px 10px; */
+    text-align: right;
+    /* text-decoration: none; */
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    right: 20%;
+    /* margin: 4px 2px; */
     cursor: pointer;
+    width: 8rem;
+    text-align: center;
   }
+.jobs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+  .jobs img {
+    
+    max-height: 300px;
+    width: 60%;
+    margin-bottom: 5rem;
+    margin-left: 4rem;
+    border-radius: 2.5%;
+  } 
+  .jobs button{
+    height: 50px;
+    background-color:white ;
+    color: #C8AA5C; 
+    text-align: right;   
+    display: inline-block;
+    font-size: 16px;
+    /* right: 20%;    */
+    cursor: pointer;
+    width: 8rem;
+    text-align: center;
 
+  }
   .footer{
     background-color: black;
     height:420px;
@@ -132,3 +135,4 @@
     justify-content: center;
     align-items: center;
   }
+

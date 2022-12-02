@@ -1,73 +1,40 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .navbar {
-    align-items: center;
-    padding: 8px 50px 0px 50px;
-    display:  flex;
-    justify-content: space-between;
-  }
-  
-  .logo img{
-    width: 60px;
-    height: 60px;
-  }
-  
-  ul {
-    display: flex;
-    gap: 5rem;
-  }
-  
-  ul li a  {
-    color: #C8AA5C;
-    text-decoration: none;
-  }
-  
-  ul li a:hover{
-    padding: 4px;
-    background: rgb(102, 96, 96);
-    transition: .5s; 
-  }
-  /* .cart{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-    margin: 10% 0 10% 0; */
-/* } */
-.cart1 {
-  margin: 50px 500px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-/* .para { */
-  
-     margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-    
-
-/* } */
-.para{
-  display: flex;
-  justify-content: center;
+.navbar {
   align-items: center;
+  padding: 8px 50px 0px 50px;
+  display:  flex;
+  justify-content: space-between;
 }
-button{
-    padding: 1rem;
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: center;
-    background-color: red;
-    color: white;
-   
+.navbar ul {
+  list-style-type: none;
 }
+
+.logo img{
+  width: 60px;
+  height: 60px;
+}
+
+ul {
+  display: flex;
+  gap: 5rem;
+}
+
+ul li a  {
+  color: #C8AA5C;
+  text-decoration: none;
+}
+
+ul li a:hover{
+  padding: 4px;
+  background: rgb(102, 96, 96);
+  transition: .5s; 
+}
+
   .footer{
     background-color: black;
     height:420px;
@@ -79,6 +46,17 @@ button{
     padding: 20px;
     margin-top: 3rem;
   }
+  .contact .ts{
+    display: flex;
+    justify-content: column;
+     
+    }
+    input .ts{
+        padding: 5rem;
+     margin: 15px;
+    
+    }
+    
   .footer-list{
     list-style: none;
     display: flex;
@@ -95,8 +73,3 @@ button{
     justify-content: center;
     align-items: center;
   }
-  .right-section{
-    display: flex;
-    align-items: row;
-    justify-content:space-around;
-  }  
