@@ -1,0 +1,151 @@
+.panier
+        {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* max-width: 300px; */
+            margin: auto;
+            text-align:center;
+            display: none;
+            position: fixed;
+            left: 25%;
+            right: 25%;
+            width: 40vw;
+            
+        }
+        .panier img
+        {
+            margin: 5px;
+            cursor: pointer;
+        }
+        .contenu-de-cart
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .total
+        {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-right: 10px;
+        }
+
+        .burger-cart{
+            display: flex;
+            flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+        }
+        .pn{
+            display: none;
+        }
+        .every{
+   display: flex;
+   gap: 30px;
+    flex-direction: column;
+  }
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .restaurant img {
+    max-height: 300px;
+    width: 60%;
+    /* margin-bottom: 5rem; */
+    margin-left: 4rem;
+    border-radius: 3%;
+    
+    
+  }
+  .restaurant button {
+    height: 50px;
+    background-color:white ;
+    /* border: #C8AA5C; */
+    color: #C8AA5C;
+    /* padding: 12px 10px; */
+    text-align: right;
+    /* text-decoration: none; */
+    display: inline-block;
+    font-size: 16px;
+    right: 20%;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    width: 8rem;
+    text-align: center;
+    border-radius: 15px;
+  }
+.jobs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+  .jobs img {
+    
+    max-height: 300px;
+    width: 60%;
+    margin-bottom: 5rem;
+    margin-left: 4rem;
+    border-radius: 2.5%;
+  } 
+  .jobs button{
+    height: 50px;
+    background-color:white ;
+    color: #C8AA5C; 
+    text-align: right;   
+    display: inline-block;
+    font-size: 16px;
+    /* right: 20%;    */
+    cursor: pointer;
+    width: 8rem;
+    text-align: center;
+    border-radius: 15px
+}
+
+@media (max-width: 768px){
+    .pn{
+            display: block;
+        }
+    .every{
+      margin-bottom: 1rem;
+    }
+    .restaurant{
+      gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurant img {
+    display: flex;
+    justify-content: center;
+  }
+  
+ .jobs{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+} 
+.jobs img {
+    
+    max-height: 300px;
+    width: 60%;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    border-radius: 2.5%;
+    display: flex;
+    justify-content: center;
+  } 
+  .restaurant img {
+    max-height: 300px;
+    width: 60%;
+    /* margin-bottom: 5rem; */
+    margin-left: 0rem;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+}
+    }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/styleNavFooter.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>menu</title>
+</head>
+<body>
+    <header class="navbar">
+        <label class="logo">
+            <img src="./images/icon/Hitaka_Logo__2_-removebg-preview.png" alt="...">
+        </label>
+        <nav>
+            <!-- <li><img onclick="aff()" src="images/icon/cart.jpg" width="20px"></li> -->
+            <ul>
+                <i class="bx bx-x close-menu"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><img onclick="aff()" src="images/icon/cart.jpg" width="20px"></li>
+                <!-- <li><img src="./images/icon/cart.jpg" width="20px"></li> -->
+            </ul>
+        </nav>
+        <div class="burger-cart">
+            <li class="pn"><img onclick="aff()" src="images/icon/cart.jpg" width="20px"></li>
+            <i class='bx bx-menu burger'></i>
+        </div>
+    </header>
+
+    <div class="panier">
+        <img onclick="hide()" src="images/x.svg" alt="x" width="20px" height="20px">
+        <h2>panier</h2>
+        <div class="box">
+    
+        </div>
+        <div class="total">
+            <p>total</p>
+            <p class="totalPrice">0$</p>
+            <button onclick="delet()">buy</button>
+        </div>
+    </div>
+    
+    <div class="menu">
+        <a onclick="all1()">all</a>
+        <a onclick="main()">main</a>
+        <a onclick="soupe()">Soups</a>
+        <a onclick="desert()">Dessert</a>
+    </div>
+    
+    </div>
+    
+    <div class="parent">
+        <div class="content-1 fltAll main soup">
+            <div class="image">
+                <img src="images/pexels-photo-3297801.webp" alt="chiken asian food soup noodles">
+            </div>
+            <div class="detail">
+                <h2>Thai salad 25$</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="content-2 fltAll main">
+            <div class="detail">
+                <h2>Home sushi 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image">
+                <img src="images/sushi.jpg" alt="chiken asian food soup noodles">
+            </div>
+        </div>
+    
+        <div class="content-1 fltAll main">
+            <div class="image">
+                <img src="images/sushi.jpg" alt="chiken asian food soup noodles">
+            </div>
+            <div class="detail">
+                <h2>volcano shushi 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="content-2 fltAll Desert">
+            <div class="detail">
+                <h2>Matcha-gauffre 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image">
+                <img src="images/ebd779e2f3848275f0e942db4175e628.jpg" alt="chiken asian food soup noodles">
+            </div>
+        </div>
+    
+        <div class="content-1 fltAll desert">
+            <div class="image">
+                <img src="images/ebd779e2f3848275f0e942db4175e628.jpg" alt="chiken asian food soup noodles">
+            </div>
+            <div class="detail">
+                <h2>CPumpkin pie 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="content-2 fltAll desert">
+            <div class="detail">
+                <h2>Spicy cupcake 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image">
+                <img src="images/f388f27344b504f9aac7326cec84f7aa.jpg" alt="chiken asian food soup noodles">
+            </div>
+        </div>
+    
+        <div class="content-1 fltAll soup">
+            <div class="image">
+                <img src="images/pexels-photo-955137.webp" alt="chiken asian food soup noodles">
+            </div>
+            <div class="detail">
+                <h2>shrimp noodles 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="content-2 fltAll soup">
+            <div class="detail">
+                <h2>thai soup 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="image">
+                <img src="images/pexels-photo-1374493.webp" alt="chiken asian food soup noodles">
+            </div>
+        </div>
+        <div class="content-1 fltAll soup">
+            <div class="image">
+                <img src="images/pexels-photo-1275894.webp" alt="chiken asian food soup noodles">
+            </div>
+            <div class="detail">
+                <h2>noodle soup 25 $</h2>
+                <div class="ingrediants">
+                    <span> -chicken </span>
+                    <span> -curry sauce </span>
+                    <span> -fried chillie </span>
+                    <span> -paniata </span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>hitaka</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere vero, illum sunt dolore veniam at dicta
+                facilis reiciendis nesciunt! Esse alias ex natus itaque aperiam blanditiis eveniet, ab mollitia consequatur.
+            </p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <!-- <div class="footer-bottom">
+                <p>copyright &copy; <a href="#">hitaka</a> </p>
+            </div> -->
+    
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    
+</body>
+</html>

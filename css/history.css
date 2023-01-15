@@ -1,0 +1,122 @@
+.panier
+        {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* max-width: 300px; */
+            margin: auto;
+            text-align:center;
+            display: none;
+            position: fixed;
+            left: 25%;
+            right: 25%;
+            width: 40vw;
+            
+        }
+        .panier img
+        {
+            margin: 5px;
+            cursor: pointer;
+        }
+        .contenu-de-cart
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .total
+        {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-right: 10px;
+        }
+
+        .burger-cart{
+            display: flex;
+            flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+        }
+        .pn{
+            display: none;
+        }
+
+.tar{
+   column-gap: 5%;
+  }
+.tar .h1{
+    display: flex;
+    justify-content: left;
+    margin-left: 25%;
+    margin-bottom: 1.5rem;
+}
+.tar .para{
+    display: flex;
+    margin-bottom: 1rem;
+    
+}
+.div{
+  display:flex;
+  justify-content: space-around;
+}
+.div img{
+    height: 220px;
+    width:420px;
+  margin-top: 2.5rem;
+  margin-bottom: 20px;
+  border-radius: 3%;
+}
+h2{
+   display: flex;
+    justify-content: left;
+    margin-left: 15%;
+    margin-bottom: 1.5rem;
+    font-size: 190%;
+}
+.team{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+  border-radius: 3%;
+}
+.team.define{
+  display: flex;
+  flex-direction: column;
+
+}
+.team .define img{
+ border-radius: 3%;
+}
+.team .define p{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px){
+    .pn{
+            display: block;
+        }
+
+    .team {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+    border-radius: 3%;
+    flex-wrap: wrap;
+    right: 0;
+}
+
+   .div{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    text-align: center;
+   } 
+   .div img {
+    width :80%;
+    align-items: center;
+   }
+    
+    }

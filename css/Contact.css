@@ -1,0 +1,108 @@
+.panier
+        {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* max-width: 300px; */
+            margin: auto;
+            text-align:center;
+            display: none;
+            position: fixed;
+            left: 25%;
+            right: 25%;
+            width: 40vw;
+            
+        }
+        .panier img
+        {
+            margin: 5px;
+            cursor: pointer;
+        }
+        .contenu-de-cart
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .total
+        {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-right: 10px;
+        }
+
+        .burger-cart{
+            display: flex;
+            flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+        }
+        .pn{
+            display: none;
+        }
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    justify-content: space-evenly;
+  }
+  .contact img {
+    border-radius: 0.3rem;
+    width: 30%;
+    height: 25rem;
+    object-fit:fill;
+    
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+  .info .input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .info .input input{
+    width: 15rem;
+    padding: 0.4rem;
+    border-radius: 10px;
+  }
+
+  .info .input textarea {
+    padding: 0.3rem;
+   width : 244px ;
+   height : 112px;
+   border-radius: 10px;
+  }
+  .info .button{
+    /* display: flex;
+    justify-content: center;
+    margin bottom: 7rem;
+    .left-section : 50%: */
+    background-color:#C8AA5C ;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+     border-radius: 10px;
+
+  }
+  @media (max-width: 768px){
+    .pn{
+            display: block;
+        }
+    }

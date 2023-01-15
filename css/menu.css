@@ -1,0 +1,146 @@
+.panier
+        {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* max-width: 300px; */
+            margin: auto;
+            text-align:center;
+            display: none;
+            position: fixed;
+            left: 25%;
+            right: 25%;
+            width: 40vw;
+            
+        }
+        .panier img
+        {
+            margin: 5px;
+            cursor: pointer;
+        }
+        .contenu-de-cart
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .total
+        {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-right: 10px;
+        }
+
+        .burger-cart{
+            display: flex;
+            flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+        }
+        .pn{
+            display: none;
+        }
+        
+
+
+.menu {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  width: 8%;
+  padding: 0.5rem;
+  color: white;
+  background-color: #C8AA5C;
+  border-radius: 0.3rem;
+}
+.parent{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.parent .content-1 {
+  margin: 5rem 7rem;
+  display: flex;
+  justify-content: space-around  ;
+}
+
+.parent .content-2 {
+  margin: 5rem 7rem;
+  display: flex;
+  justify-content: space-around  ;
+}
+
+.parent .image{
+  /* width: 40%;   */
+  height: 15rem;
+  border-radius: 0.3rem;
+}
+.image img {
+  width: 300px;
+  height: 100%;
+  object-fit:fill;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ingrediants {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.content-1 button {
+  padding: 0.4rem;
+  background-color: transparent;
+  border: solid 1.5px #ffb700;
+  border-radius: 0.3rem;
+}
+.content-2 button {
+  padding: 0.4rem;
+  background-color: transparent;
+  border: solid 1.5px #ffb700;
+  border-radius: 0.3rem;
+}
+.image {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px){
+    .pn{
+            display: block;
+        }
+        
+    .image  img{
+        
+    height: 80%;
+  } 
+  .parent .content-1{
+      flex-direction: column;
+      margin: 3rem 3rem;
+    display: flex;
+    justify-content: space-around;
+      /* align-items: center; */
+    }
+
+
+.parent .content-2 {
+    flex-direction: column-reverse;
+    margin: 3rem 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+    
+}

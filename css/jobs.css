@@ -1,0 +1,52 @@
+.panier
+        {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* max-width: 300px; */
+            margin: auto;
+            text-align:center;
+            display: none;
+            position: fixed;
+            left: 25%;
+            right: 25%;
+            width: 40vw;
+            
+        }
+        .panier img
+        {
+            margin: 5px;
+            cursor: pointer;
+        }
+        .contenu-de-cart
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .total
+        {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-right: 10px;
+        }
+
+        .burger-cart{
+            display: flex;
+            flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+        }
+        .pn{
+            display: none;
+        }
+
+        @media (max-width: 768px){
+    .pn{
+            display: block;
+        }
+
+        
+    }
